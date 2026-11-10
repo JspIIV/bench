@@ -1,0 +1,29 @@
+{
+  "network": "genlayer testnet bradbury phase 2",
+  "chain_id": 4221,
+  "template_registry_impl": {
+    "address": "0x8ce0D0E54FeB617E3f6D6F290AF98F86992124dA",
+    "tx": "0x73620a8c6662a95ab3a768a525bd313144615a0fafc1aa24ceab53cccb631e68"
+  },
+  "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
+  "template_registry": {
+    "address": "0x1b0fbC1AEeEBe5cF8Ac6BA83A6d19f0e776f102A",
+    "tx": "0xbbe2b890cc9718a17c95af66d8667947893d9ba71aeafe3b3895978a55cf1658"
+  },
+  "bench": {
+    "address": "0xd1bc9151777800454A3235a7FF0739306249e487",
+    "tx": "0x570defb084188c0d903c4e3641a40bb00411cc1234f0eeab1e808288274d127e"
+  },
+  "dispute_resolver": {
+    "address": "0x164c46be9CE1e97ab0E3941b583D8E2C4A1082d2",
+    "tx": "0x306b1e56d9a63a2a4fbc04c1fe9ca937df030a14f7563f252280b8e746c43078"
+  },
+  "court": {
+    "address": "0xe4bCCa0B0AF695adFE5F1E8e8157Bcf0e51fA648",
+    "tx": "0x934f9b64f3b6bdf4b9f787ceb0ad8c3a0b8f7e988629b3f49a9beb24e6c1d3f0"
+  },
+  "address": "0xe4bCCa0B0AF695adFE5F1E8e8157Bcf0e51fA648",
+  "tx": "0x934f9b64f3b6bdf4b9f787ceb0ad8c3a0b8f7e988629b3f49a9beb24e6c1d3f0",
+  "deployed_at": "2026-11-10T15:11:03.252Z",
+  "wired": true
+}

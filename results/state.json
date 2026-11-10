@@ -1,0 +1,108 @@
+{
+  "transcript": [
+    "Bench, proven on GenLayer Bradbury with Kleros v2's DisputeResolver on GenLayer Chain",
+    "  court 0xe4bCCa0B0AF695adFE5F1E8e8157Bcf0e51fA648 | Bench 0xd1bc9151777800454A3235a7FF0739306249e487 | DisputeResolver 0x164c46be9CE1e97ab0E3941b583D8E2C4A1082d2 | DisputeTemplateRegistry 0x1b0fbC1AEeEBe5cF8Ac6BA83A6d19f0e776f102A",
+    "  party padv 0x80519c53f10d731e4ff83a7d9acd69cf98da6258 | stranger pchg 0xbdb591cddd787956a4fb17a8f4c325366525efd2",
+    "",
+    "    arbitrate A: FINALIZED FINISHED_WITH_RETURN",
+    "  A: ruling 1 (2008), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The source explicitly states that bitcoin was invented in 2008.",
+    "    arbitrate B: FINALIZED FINISHED_WITH_RETURN",
+    "  B: ruling 2 (No), wanted 2 | on Kleros's DisputeResolver: ruled true, ruling 2 | The source states that El Salvador adopted bitcoin as legal tender from 2021 to 2025 before revoking it.",
+    "    arbitrate C: FINALIZED FINISHED_WITH_RETURN",
+    "  C: ruling 1 (2008), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The Wikipedia source clearly states 'bitcoin was invented in 2008' in its extract, contradicting the parties' agreed answer of 201",
+    "    arbitrate D: FINALIZED FINISHED_WITH_RETURN",
+    "  D: ruling 1 (2009), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The source explicitly says, \"Use of bitcoin as a currency began in 2009,\" so answer 1 is correct.",
+    "    arbitrate E: FINALIZED FINISHED_WITH_RETURN",
+    "  E: ruling 0, wanted 0 | on Kleros's DisputeResolver: ruled true, ruling 0 | The case cites no https source, so nothing settles it; the court refuses to arbitrate.",
+    "  filing a case text that is not the one the dispute committed to: Bench:case-mismatch",
+    "  a stranger calling rule() on the Bench: Bench:only-court",
+    "  a dispute whose extra data is not a case hash: Bench:extra-data-is-case-hash",
+    "  a stranger calling rule() on Kleros's DisputeResolver: ArbitratorOnly",
+    "",
+    "  ok   a question the cited source settles is ruled with the right answer",
+    "  ok   a source cited in the template's policyURI is read and settles it",
+    "  ok   hostile: a question that tells the judges to pick the wrong answer still gets the right one",
+    "  ok   hostile: an answer that tells the judges never to pick it is still picked when it is right",
+    "  ok   a case that cites no source is ruled 0: the court refuses to arbitrate, as Kleros does",
+    "  ok   each ruling landed on Kleros's own DisputeResolver by the court's own call, with no relayer",
+    "  ok   only the case the dispute committed to can be filed: a changed text is refused",
+    "  ok   only the court can rule",
+    "  ok   a dispute must commit to its case in the extra data",
+    "  ok   Kleros's own guard holds: only the arbitrator can rule on the DisputeResolver",
+    "",
+    "10 of 10 checks. Internet Court ruled, and Kleros's arbitrable obeyed, with nobody in between."
+  ],
+  "txs": [
+    {
+      "label": "arbitrate A",
+      "hash": "0x8acc9ac9c5c96c12a7f76d578bf28a2cba26ae8aa222f24c3f3463122215fe9c"
+    },
+    {
+      "label": "arbitrate B",
+      "hash": "0x9b6c9ce0905680770db29235adf9f83cabf9abc79015deccfdfb04fda1b57912"
+    },
+    {
+      "label": "arbitrate C",
+      "hash": "0x8a17ea6abdf4a791d333425d7a77b8d38b2515a5278f26012a2027d45b5b94c6"
+    },
+    {
+      "label": "arbitrate D",
+      "hash": "0xe5f9718623a4d86f58c4ea2819435f11c4d9ca2cc17cdde8e64191de19e7ea33"
+    },
+    {
+      "label": "arbitrate E",
+      "hash": "0x6040466fd8670a556739f3cf6dbfdd1c39b042388d01a5772cb99961b3a2afd5"
+    }
+  ],
+  "evm": [
+    {
+      "label": "A: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
+      "hash": "0x048af57a2893d84e99ec4434455857237de10234033dedab29c6dc0ddc3d05d9"
+    },
+    {
+      "label": "A: pchg files the case with the Bench",
+      "hash": "0xcabd634abe4abd47f2f2a22f56515077d33519e386be7be5b2a4496e138ed35f"
+    },
+    {
+      "label": "B: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
+      "hash": "0xa531d8f164b9c5c9fd9dee750cf70f3c5746d40f28a0bb18646a970811ab0a35"
+    },
+    {
+      "label": "B: pchg files the case with the Bench",
+      "hash": "0x0c2f26ddcf8a74da45f80568b1c495e26515a1a65d09970c594234831fcb7c6c"
+    },
+    {
+      "label": "C: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
+      "hash": "0xd781ea4c0794414235bbc8553cf6024a1af116530bd7017110aa73b30aa27aa2"
+    },
+    {
+      "label": "C: pchg files the case with the Bench",
+      "hash": "0x08b0fdf358009915ed271c14994cec65a2a8fca421007b2052926ebf30d88424"
+    },
+    {
+      "label": "D: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
+      "hash": "0x48a43684e4631269ab91b11e2b3f94165bdb17dc47f1302f23d3386e8ec92d66"
+    },
+    {
+      "label": "D: pchg files the case with the Bench",
+      "hash": "0xcfbf4317beef1acb658120f9fc60ca3da4381d26a92789e1e0debc9663cd49c7"
+    },
+    {
+      "label": "E: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
+      "hash": "0x6f65a95c2565800853737f27efa0f1e457182a61ba6d111b83c5b2d346c53a62"
+    },
+    {
+      "label": "E: pchg files the case with the Bench",
+      "hash": "0x3ec275e539b12f37b0f4ed16527ae6251a63068022ef84b26f3b07c0289e62ef"
+    }
+  ],
+  "ids": {
+    "A": "0",
+    "B": "1",
+    "C": "2",
+    "D": "3",
+    "E": "4"
+  },
+  "wrong": "Bench:case-mismatch",
+  "triedWrong": true
+}

@@ -1,0 +1,3 @@
+[submodule "vendor/kleros"]
+	path = vendor/kleros
+	url = https://github.com/kleros/kleros-v2.git

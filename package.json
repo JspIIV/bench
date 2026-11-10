@@ -1,0 +1,21 @@
+{
+  "name": "bench",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Bench: Internet Court as a Kleros IArbitratorV2 arbitrator. Any Kleros arbitrable contract can choose a GenLayer court that rules from cited evidence in minutes and delivers the ruling itself, no relayer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JspIIV/bench.git"
+  },
+  "scripts": {
+    "test": "python tests/bench_rules.py"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.5.0",
+    "ethers": "^6.17.0",
+    "genlayer-js": "2.0.0-rc.2",
+    "solc": "^0.8.36"
+  }
+}
