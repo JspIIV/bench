@@ -1,34 +1,34 @@
 {
-  "proved_at": "2026-11-10T15:34:17.190Z",
+  "proved_at": "2026-11-20T16:07:24.826Z",
   "network": "genlayer testnet bradbury phase 2",
-  "contract": "0xe4bCCa0B0AF695adFE5F1E8e8157Bcf0e51fA648",
+  "contract": "0xf9792992873E8E316CDd79418D516648f5f7eF8B",
   "deployment": {
     "network": "genlayer testnet bradbury phase 2",
     "chain_id": 4221,
     "template_registry_impl": {
-      "address": "0x8ce0D0E54FeB617E3f6D6F290AF98F86992124dA",
-      "tx": "0x73620a8c6662a95ab3a768a525bd313144615a0fafc1aa24ceab53cccb631e68"
+      "address": "0xF417df6b507d3b3165350F7402F34F025C895682",
+      "tx": "0xf1ababa4e2c060b0013c0bb35a41403272472855c019789caa14bed51b7e185f"
     },
     "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
     "template_registry": {
-      "address": "0x1b0fbC1AEeEBe5cF8Ac6BA83A6d19f0e776f102A",
-      "tx": "0xbbe2b890cc9718a17c95af66d8667947893d9ba71aeafe3b3895978a55cf1658"
+      "address": "0x10aE77b6b5cFd782c0c39B5FEA7c982147FcC3ec",
+      "tx": "0x208cebd07a3ed65a7b8afb98d66d9c476e28b0e1a451ef88beb50fb54df76abb"
     },
     "bench": {
-      "address": "0xd1bc9151777800454A3235a7FF0739306249e487",
-      "tx": "0x570defb084188c0d903c4e3641a40bb00411cc1234f0eeab1e808288274d127e"
+      "address": "0xB31e9Fcf6A4A424e37475A211fAfB2bFC74b16E3",
+      "tx": "0xafb2673f1498fabed2bdaad2409cb0b04e36c8e7bb189ee697c188da96933341"
     },
     "dispute_resolver": {
-      "address": "0x164c46be9CE1e97ab0E3941b583D8E2C4A1082d2",
-      "tx": "0x306b1e56d9a63a2a4fbc04c1fe9ca937df030a14f7563f252280b8e746c43078"
+      "address": "0x0c46e7C42a3a2f351A6F7F9644E621F0704aA88c",
+      "tx": "0xca3ce8aa2d27279e7052a2b8d61d96330541a23a69692ad292650f9ff8642524"
     },
     "court": {
-      "address": "0xe4bCCa0B0AF695adFE5F1E8e8157Bcf0e51fA648",
-      "tx": "0x934f9b64f3b6bdf4b9f787ceb0ad8c3a0b8f7e988629b3f49a9beb24e6c1d3f0"
+      "address": "0xf9792992873E8E316CDd79418D516648f5f7eF8B",
+      "tx": "0xa15d07ab7d2f045724708f952b1ed84089286530f0ff55fb5af85765a2840323"
     },
-    "address": "0xe4bCCa0B0AF695adFE5F1E8e8157Bcf0e51fA648",
-    "tx": "0x934f9b64f3b6bdf4b9f787ceb0ad8c3a0b8f7e988629b3f49a9beb24e6c1d3f0",
-    "deployed_at": "2026-11-10T15:11:03.252Z",
+    "address": "0xf9792992873E8E316CDd79418D516648f5f7eF8B",
+    "tx": "0xa15d07ab7d2f045724708f952b1ed84089286530f0ff55fb5af85765a2840323",
+    "deployed_at": "2026-11-20T15:56:11.883Z",
     "wired": true
   },
   "cases": {
@@ -58,7 +58,7 @@
       "id": "0",
       "ruling": 1,
       "answer": "2008",
-      "why": "The source explicitly states that bitcoin was invented in 2008.",
+      "why": "The cited Wikipedia summary states that bitcoin was invented in 2008.",
       "executed": true,
       "klerosRuled": true,
       "klerosRuling": 1,
@@ -68,7 +68,7 @@
       "id": "1",
       "ruling": 2,
       "answer": "No",
-      "why": "The source states that El Salvador adopted bitcoin as legal tender from 2021 to 2025 before revoking it.",
+      "why": "The source states that El Salvador adopted Bitcoin as legal tender from 2021 to 2025 before revoking it, indicating the law is no longer in force.",
       "executed": true,
       "klerosRuled": true,
       "klerosRuling": 2,
@@ -78,7 +78,7 @@
       "id": "2",
       "ruling": 1,
       "answer": "2008",
-      "why": "The Wikipedia source clearly states 'bitcoin was invented in 2008' in its extract, contradicting the parties' agreed answer of 2015.",
+      "why": "The cited Wikipedia summary states that bitcoin was invented in 2008.",
       "executed": true,
       "klerosRuled": true,
       "klerosRuling": 1,
@@ -88,7 +88,7 @@
       "id": "3",
       "ruling": 1,
       "answer": "2009",
-      "why": "The source explicitly says, \"Use of bitcoin as a currency began in 2009,\" so answer 1 is correct.",
+      "why": "The Wikipedia summary extract states: 'Use of bitcoin as a currency began in 2009, with the release of its open-source implementation.'",
       "executed": true,
       "klerosRuled": true,
       "klerosRuling": 1,
@@ -115,65 +115,65 @@
   "txs": [
     {
       "label": "arbitrate A",
-      "hash": "0x8acc9ac9c5c96c12a7f76d578bf28a2cba26ae8aa222f24c3f3463122215fe9c"
+      "hash": "0x4cf9abbefcc45da0dc628be1a18909f279ab8efb0d27bebebae0ddc4b8ac83d2"
     },
     {
       "label": "arbitrate B",
-      "hash": "0x9b6c9ce0905680770db29235adf9f83cabf9abc79015deccfdfb04fda1b57912"
+      "hash": "0x8f0b0b7804c379c33883e694df40ebd35decb4e42fb1d6bc83af2d7f2107f986"
     },
     {
       "label": "arbitrate C",
-      "hash": "0x8a17ea6abdf4a791d333425d7a77b8d38b2515a5278f26012a2027d45b5b94c6"
+      "hash": "0x62a48a4b84538152e372073896432c12f55632c287be940162af014a88e6b3eb"
     },
     {
       "label": "arbitrate D",
-      "hash": "0xe5f9718623a4d86f58c4ea2819435f11c4d9ca2cc17cdde8e64191de19e7ea33"
+      "hash": "0x6f9909336a8b2a4c9b4faa035fc45f3b3250269b3ef29b6234bc6212bf29193e"
     },
     {
       "label": "arbitrate E",
-      "hash": "0x6040466fd8670a556739f3cf6dbfdd1c39b042388d01a5772cb99961b3a2afd5"
+      "hash": "0x63fcd60d6aa6f7407c89db7c0fc88d6bbab7d4f6f5a565c9605fc6ea9d5e9cee"
     }
   ],
   "evm": [
     {
       "label": "A: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
-      "hash": "0x048af57a2893d84e99ec4434455857237de10234033dedab29c6dc0ddc3d05d9"
+      "hash": "0x488654f304675f5b28546ba54562d2c2b7e717cbd60d8b8c29353bea37163799"
     },
     {
       "label": "A: pchg files the case with the Bench",
-      "hash": "0xcabd634abe4abd47f2f2a22f56515077d33519e386be7be5b2a4496e138ed35f"
+      "hash": "0x48e082046b6f9c5b1b27bedc9d5925c14045d44b1629ea86999df88a52923307"
     },
     {
       "label": "B: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
-      "hash": "0xa531d8f164b9c5c9fd9dee750cf70f3c5746d40f28a0bb18646a970811ab0a35"
+      "hash": "0x91b4806afc2416115d7118bffc87ce33b3abb427e3fe03909f9d4f67ea3b4525"
     },
     {
       "label": "B: pchg files the case with the Bench",
-      "hash": "0x0c2f26ddcf8a74da45f80568b1c495e26515a1a65d09970c594234831fcb7c6c"
+      "hash": "0xa92ac868f22e60c00398aabeef43ffb53faf8a26b1cc6c627d3331372f672430"
     },
     {
       "label": "C: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
-      "hash": "0xd781ea4c0794414235bbc8553cf6024a1af116530bd7017110aa73b30aa27aa2"
+      "hash": "0x9fee1a41a9a3aa41817bf032f58994515b087f2de5fc355a1905df8631870e73"
     },
     {
       "label": "C: pchg files the case with the Bench",
-      "hash": "0x08b0fdf358009915ed271c14994cec65a2a8fca421007b2052926ebf30d88424"
+      "hash": "0x60fd5f5de56bff4d0f608e9c15b40a1e1f220c801573d68ce959a3ee049ecb2b"
     },
     {
       "label": "D: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
-      "hash": "0x48a43684e4631269ab91b11e2b3f94165bdb17dc47f1302f23d3386e8ec92d66"
+      "hash": "0x9ddc0dc6ae2fa7fcb77b722f658def79c9a15800430211a97afad6488b08c3e2"
     },
     {
       "label": "D: pchg files the case with the Bench",
-      "hash": "0xcfbf4317beef1acb658120f9fc60ca3da4381d26a92789e1e0debc9663cd49c7"
+      "hash": "0xea1483f83d800e728f453204ae5f1d0304f7b34dffedb2f851868aba97d1b3df"
     },
     {
       "label": "E: padv opens a dispute on Kleros's DisputeResolver, Bench as arbitrator",
-      "hash": "0x6f65a95c2565800853737f27efa0f1e457182a61ba6d111b83c5b2d346c53a62"
+      "hash": "0xe48d019107f3fc47db0af3746a7103ffc5251b230938ff0f0fe47077b20a4867"
     },
     {
       "label": "E: pchg files the case with the Bench",
-      "hash": "0x3ec275e539b12f37b0f4ed16527ae6251a63068022ef84b26f3b07c0289e62ef"
+      "hash": "0xbd7d0042f403249de4f3f26ce48eacadb4c563968df914a9ad9fca4930caee92"
     }
   ],
   "checks": [
@@ -220,17 +220,17 @@
   ],
   "transcript": [
     "Bench, proven on GenLayer Bradbury with Kleros v2's DisputeResolver on GenLayer Chain",
-    "  court 0xe4bCCa0B0AF695adFE5F1E8e8157Bcf0e51fA648 | Bench 0xd1bc9151777800454A3235a7FF0739306249e487 | DisputeResolver 0x164c46be9CE1e97ab0E3941b583D8E2C4A1082d2 | DisputeTemplateRegistry 0x1b0fbC1AEeEBe5cF8Ac6BA83A6d19f0e776f102A",
+    "  court 0xf9792992873E8E316CDd79418D516648f5f7eF8B | Bench 0xB31e9Fcf6A4A424e37475A211fAfB2bFC74b16E3 | DisputeResolver 0x0c46e7C42a3a2f351A6F7F9644E621F0704aA88c | DisputeTemplateRegistry 0x10aE77b6b5cFd782c0c39B5FEA7c982147FcC3ec",
     "  party padv 0x80519c53f10d731e4ff83a7d9acd69cf98da6258 | stranger pchg 0xbdb591cddd787956a4fb17a8f4c325366525efd2",
     "",
     "    arbitrate A: FINALIZED FINISHED_WITH_RETURN",
-    "  A: ruling 1 (2008), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The source explicitly states that bitcoin was invented in 2008.",
+    "  A: ruling 1 (2008), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The cited Wikipedia summary states that bitcoin was invented in 2008.",
     "    arbitrate B: FINALIZED FINISHED_WITH_RETURN",
-    "  B: ruling 2 (No), wanted 2 | on Kleros's DisputeResolver: ruled true, ruling 2 | The source states that El Salvador adopted bitcoin as legal tender from 2021 to 2025 before revoking it.",
+    "  B: ruling 2 (No), wanted 2 | on Kleros's DisputeResolver: ruled true, ruling 2 | The source states that El Salvador adopted Bitcoin as legal tender from 2021 to 2025 before revoking it, indicating the law is no ",
     "    arbitrate C: FINALIZED FINISHED_WITH_RETURN",
-    "  C: ruling 1 (2008), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The Wikipedia source clearly states 'bitcoin was invented in 2008' in its extract, contradicting the parties' agreed answer of 201",
+    "  C: ruling 1 (2008), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The cited Wikipedia summary states that bitcoin was invented in 2008.",
     "    arbitrate D: FINALIZED FINISHED_WITH_RETURN",
-    "  D: ruling 1 (2009), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The source explicitly says, \"Use of bitcoin as a currency began in 2009,\" so answer 1 is correct.",
+    "  D: ruling 1 (2009), wanted 1 | on Kleros's DisputeResolver: ruled true, ruling 1 | The Wikipedia summary extract states: 'Use of bitcoin as a currency began in 2009, with the release of its open-source implementat",
     "    arbitrate E: FINALIZED FINISHED_WITH_RETURN",
     "  E: ruling 0, wanted 0 | on Kleros's DisputeResolver: ruled true, ruling 0 | The case cites no https source, so nothing settles it; the court refuses to arbitrate.",
     "  filing a case text that is not the one the dispute committed to: Bench:case-mismatch",
