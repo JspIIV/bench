@@ -96,15 +96,25 @@ def read_case(text: str, choices: int):
     return question, shown, cited
 
 
-@gl.evm.contract_interface
-class Bench:
-    class View:
-        def facts(self, dispute_id: gl.u256, /) -> tuple[gl.Address, gl.u256, bool, bool, gl.u256, bool]: ...
-        def caseText(self, dispute_id: gl.u256, /) -> str: ...
-        def disputeCount(self, /) -> gl.u256: ...
+def _iface_Bench():
+    """The Bench interface, generated on first use rather than at import: GenVM's validator imports
+    contracts with GENERATING_DOCS=true, where the SDK's EVM view generator raises KeyError('return')."""
 
-    class Write:
-        def rule(self, dispute_id: gl.u256, ruling: gl.u256, reason: gl.evm.bytes32, /) -> None: ...
+    @gl.evm.contract_interface
+    class Bench:
+        class View:
+            def facts(self, dispute_id: gl.u256, /) -> tuple[gl.Address, gl.u256, bool, bool, gl.u256, bool]: ...
+            def caseText(self, dispute_id: gl.u256, /) -> str: ...
+            def disputeCount(self, /) -> gl.u256: ...
+
+        class Write:
+            def rule(self, dispute_id: gl.u256, ruling: gl.u256, reason: gl.evm.bytes32, /) -> None: ...
+
+    return Bench
+
+
+def Bench(address):
+    return _iface_Bench()(address)
 
 
 def _task(question: str, answers: list, pages: list) -> str:
